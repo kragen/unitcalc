@@ -221,3 +221,9 @@ def loadme():
 ## loadme()
 ## sorted(known_units)
 #. ['A', 'K', 'US$', 'bit', 'cd', 'cm', 'day', 'feet', 'foot', 'fortnight', 'ft', 'furlong', 'furlongs', 'hour', 'hr', 'inch', 'kg', 'm', 'min', 'minute', 'mol', 'radian', 'rod', 's', 'sr', 'wholenote', 'yard']
+
+if __name__ == '__main__':
+    import sys
+    loadme()
+    for arg in sys.argv[1:]:
+        print calc(arg)
